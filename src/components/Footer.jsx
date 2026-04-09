@@ -7,13 +7,18 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-section">
-          <h4>{t("footer.visitTunisia")}</h4>
-          <p>{t("footer.tagline")}</p>
+        {/* Column 1: Main Info */}
+        <div className="footer-column">
+          <h3>Visit Tunisia</h3>
+          <p>
+            Discover authentic Mediterranean and Sahara experiences with our
+            carefully curated travel destinations and guides.
+          </p>
         </div>
 
-        <div className="footer-section">
-          <h4>{t("footer.explore")}</h4>
+        {/* Column 2: Explore */}
+        <div className="footer-column">
+          <h4>Explore</h4>
           <ul>
             <li>
               <Link to="/">{t("footer.home")}</Link>
@@ -33,46 +38,47 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="footer-section">
-          <h4>{t("footer.information")}</h4>
+        {/* Column 3: Resources */}
+        <div className="footer-column">
+          <h4>Resources</h4>
           <ul>
             <li>
-              <Link to="/guides">{t("footer.visaEntry")}</Link>
+              <Link to="/guides">Travel Information</Link>
             </li>
             <li>
-              <Link to="/guides">{t("footer.localGuides")}</Link>
+              <Link to="/contact">Contact Support</Link>
             </li>
             <li>
-              <Link to="/guides">{t("footer.accommodations")}</Link>
+              <a href="mailto:berriraslen@gmail.com">Get in Touch</a>
             </li>
             <li>
-              <Link to="/guides">{t("footer.travelGuides")}</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <Link to="/contact">{t("footer.contactUs")}</Link>
+              <a href="tel:+21658138146">Call Us</a>
             </li>
           </ul>
         </div>
 
-        <div className="footer-section">
-          <h4>{t("footer.email")}</h4>
-          <ul>
-            <li>
-              <a href="mailto:berriraslen@gmail.com">{t("footer.email1")}</a>
-            </li>
-            <li>
-              <a href="mailto:firas0elmahdi@gmail.com">{t("footer.email2")}</a>
-            </li>
-          </ul>
+        {/* Column 4: Connect */}
+        <div className="footer-column">
+          <h4>Get in Touch</h4>
+          <div className="footer-contact">
+            <p>Nabeul, Tunisia</p>
+            <p>
+              <a href="tel:+21658138146">+216 58 138 146</a>
+            </p>
+            <p>
+              <a href="mailto:berriraslen@gmail.com">berriraslen@gmail.com</a>
+            </p>
+          </div>
         </div>
       </div>
 
+
       <div className="footer-bottom">
-        <div style={{ maxWidth: "1400px", margin: "0 auto", width: "100%" }}>
-          <p style={{ margin: 0, paddingBottom: "0.5rem" }}>
-            {t("footer.copyright")}
-          </p>
-        </div>
+        <p>{t("footer.copyright")}</p>
+        <p>A Tunisia tourism platform by Raslen Berri & Firas Mehdi</p>
       </div>
     </footer>
   );

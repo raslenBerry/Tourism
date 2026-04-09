@@ -9,12 +9,11 @@ function Experiences() {
   const experiences = [
     {
       id: 1,
-      title: "Camel Trekking in Sahara",
+      titleKey: "exp1_title",
+      descKey: "exp1_desc",
       category: "Adventure",
       price: "From $60",
       image: "/images/camel.jpg",
-      description:
-        "Experience the legendary Sahara desert on camelback with stunning sunset views and traditional Bedouin hospitality.",
       duration: "4-8 hours",
       groupSize: "1-8 people",
       highlights: [
@@ -27,12 +26,11 @@ function Experiences() {
     },
     {
       id: 2,
-      title: "Traditional Cooking Class",
+      titleKey: "exp2_title",
+      descKey: "exp2_desc",
       category: "Cultural",
       price: "From $50",
       image: "/images/Tunisia-Cooking-Class-Woman-1024x683.jpg.webp",
-      description:
-        "Learn to prepare authentic Tunisian cuisine with local chefs in a traditional kitchen. Create and enjoy your own meals.",
       duration: "3-4 hours",
       groupSize: "2-8 people",
       highlights: [
@@ -45,12 +43,11 @@ function Experiences() {
     },
     {
       id: 3,
-      title: "Medina & Souks Tour",
+      titleKey: "exp3_title",
+      descKey: "exp3_desc",
       category: "Cultural",
       price: "From $35",
       image: "/images/sou9.jpg",
-      description:
-        "Navigate ancient medinas with expert local guides. Discover hidden artisan shops, traditional crafts, and bustling markets.",
       duration: "3-4 hours",
       groupSize: "1-10 people",
       highlights: [
@@ -63,12 +60,11 @@ function Experiences() {
     },
     {
       id: 4,
-      title: "El Djem Roman Amphitheater",
+      titleKey: "exp4_title",
+      descKey: "exp4_desc",
       category: "History",
       price: "From $45",
       image: "/images/El-Jem-Tunisia-1.jpg.webp",
-      description:
-        "Explore one of Africa's most impressive Roman ruins with expert historians. Discover ancient Roman history and architecture.",
       duration: "3-4 hours",
       groupSize: "1-10 people",
       highlights: [
@@ -81,12 +77,11 @@ function Experiences() {
     },
     {
       id: 5,
-      title: "Kayaking & Water Sports",
+      titleKey: "exp5_title",
+      descKey: "exp5_desc",
       category: "Water Sports",
       price: "From $40",
       image: "/images/Tunisia-Al-Huwariyah-Kayak-1024x670.jpg.webp",
-      description:
-        "Experience thrilling water adventures in turquoise Mediterranean waters. Kayak, snorkel, and explore hidden coastal coves.",
       duration: "3-4 hours",
       groupSize: "2-8 people",
       highlights: [
@@ -99,12 +94,11 @@ function Experiences() {
     },
     {
       id: 6,
-      title: "Grotte Ain Dhab Caving",
+      titleKey: "exp6_title",
+      descKey: "exp6_desc",
       category: "Adventure",
       price: "From $55",
       image: "/images/Tunisia-Grotte-ain-Dhab-Me-Caving-1024x642.jpg.webp",
-      description:
-        "Explore mysterious underground caves with dramatic limestone formations. Perfect for adventure seekers and photographers.",
       duration: "2-3 hours",
       groupSize: "2-6 people",
       highlights: [
@@ -117,13 +111,12 @@ function Experiences() {
     },
     {
       id: 7,
-      title: "Sidi Bou Said Clifftop Tour",
+      titleKey: "exp7_title",
+      descKey: "exp7_desc",
       category: "Scenic",
       price: "From $30",
       image:
         "/images/cozy-streets-blue-white-sunny-day-old-city-kasbah-udayas.jpg",
-      description:
-        "Discover the picturesque blue-and-white village of Sidi Bou Said perched on Mediterranean cliffs with stunning vistas.",
       duration: "2-3 hours",
       groupSize: "1-10 people",
       highlights: [
@@ -136,12 +129,11 @@ function Experiences() {
     },
     {
       id: 8,
-      title: "Berber Weaving Workshop",
+      titleKey: "exp8_title",
+      descKey: "exp8_desc",
       category: "Cultural",
       price: "From $40",
       image: "/images/Tunisia-Hergla-Halfa-Weaving-1024x683.jpg.webp",
-      description:
-        "Learn traditional weaving techniques from local Berber artisans. Create your own handwoven textile to take home.",
       duration: "2-3 hours",
       groupSize: "1-6 people",
       highlights: [
@@ -154,12 +146,11 @@ function Experiences() {
     },
     {
       id: 9,
-      title: "Kairouan Mosque & Heritage",
+      titleKey: "exp9_title",
+      descKey: "exp9_desc",
       category: "History",
       price: "From $40",
       image: "/images/Tunisia-Kairouen-Mosque-1024x683.jpg.webp",
-      description:
-        "Visit Tunisia's holiest Islamic city with its magnificent Great Mosque, ancient medina, and rich spiritual heritage.",
       duration: "3-4 hours",
       groupSize: "1-10 people",
       highlights: [
@@ -172,12 +163,11 @@ function Experiences() {
     },
     {
       id: 10,
-      title: "Quad Biking Desert Safari",
+      titleKey: "exp10_title",
+      descKey: "exp10_desc",
       category: "Adventure",
       price: "From $70",
       image: "/images/quad_tunisia_sahara.jpg",
-      description:
-        "Thrilling quad bike adventure across Sahara dunes. Experience adrenaline-pumping desert exploration with stunning landscapes.",
       duration: "4-6 hours",
       groupSize: "1-8 people",
       highlights: [
@@ -190,12 +180,11 @@ function Experiences() {
     },
     {
       id: 11,
-      title: "Kelibia Fort & Fishing Village",
+      titleKey: "exp11_title",
+      descKey: "exp11_desc",
       category: "History",
       price: "From $35",
       image: "/images/Tunisia-Kelibia-Fort-1024x693.jpg.webp",
-      description:
-        "Explore historic Kelibia Fort overlooking the Mediterranean. Experience authentic fishing village life and coastal traditions.",
       duration: "3-4 hours",
       groupSize: "1-8 people",
       highlights: [
@@ -208,12 +197,11 @@ function Experiences() {
     },
     {
       id: 12,
-      title: "Desert Camping & Stargazing",
+      titleKey: "exp12_title",
+      descKey: "exp12_desc",
       category: "Adventure",
       price: "From $80",
       image: "/images/pexels-mahmoud-yahyaoui-29679540.jpg",
-      description:
-        "Sleep under the stars in authentic Bedouin camps. Experience desert magic with traditional meals and cultural storytelling.",
       duration: "24 hours",
       groupSize: "2-12 people",
       highlights: [
@@ -387,7 +375,7 @@ function Experiences() {
                     fontSize: "1.1rem",
                   }}
                 >
-                  {experience.title}
+                  {t(`experiences.${experience.titleKey}`)}
                 </h3>
 
                 <p
@@ -398,7 +386,7 @@ function Experiences() {
                     flex: 1,
                   }}
                 >
-                  {experience.description}
+                  {t(`experiences.${experience.descKey}`)}
                 </p>
 
                 <div
@@ -513,7 +501,7 @@ function Experiences() {
 
             <img
               src={selectedExperience.image}
-              alt={selectedExperience.title}
+              alt={t(`experiences.${selectedExperience.titleKey}`)}
               style={{
                 width: "100%",
                 height: "300px",
@@ -532,7 +520,7 @@ function Experiences() {
               }}
             >
               <h2 style={{ margin: 0, color: "#111827" }}>
-                {selectedExperience.title}
+                {t(`experiences.${selectedExperience.titleKey}`)}
               </h2>
               <div
                 style={{
@@ -553,7 +541,7 @@ function Experiences() {
                 lineHeight: "1.6",
               }}
             >
-              {selectedExperience.description}
+              {t(`experiences.${selectedExperience.descKey}`)}
             </p>
 
             <div style={{ marginBottom: "1.5rem" }}>

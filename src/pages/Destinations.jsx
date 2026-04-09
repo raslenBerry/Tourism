@@ -10,15 +10,13 @@ function Destinations() {
   const destinations = [
     {
       id: 1,
-      name: "Tunis - Capital City",
+      nameKey: "dest1_name",
+      descKey: "dest1_desc",
+      longDescKey: "dest1_longDesc",
       category: "cultural",
       lat: 36.8,
       lng: 10.2,
       image: "/images/sou9.jpg",
-      description:
-        "Explore Tunisia's vibrant capital with historic medina, world-class museums, and bustling souks.",
-      longDescription:
-        "Tunisia's capital blends ancient tradition with modern life. The UNESCO-listed Old Medina features narrow winding streets, traditional riads, and the famous Zitouna Mosque. The Bardo Museum houses exceptional Roman mosaics and Islamic art. Experience authentic local culture in the bustling markets.",
       rating: 4.8,
       reviews: 324,
       bestFor: ["History", "Culture", "Shopping"],
@@ -59,16 +57,14 @@ function Destinations() {
     },
     {
       id: 2,
-      name: "Sidi Bou Said - Coastal Beauty",
+      nameKey: "dest2_name",
+      descKey: "dest2_desc",
+      longDescKey: "dest2_longDesc",
       category: "coastal",
       lat: 36.87,
       lng: 10.33,
       image:
         "/images/cozy-streets-blue-white-sunny-day-old-city-kasbah-udayas.jpg",
-      description:
-        "Stunning clifftop village famous for blue-and-white architecture overlooking the Mediterranean.",
-      longDescription:
-        "This picturesque village is perched on a cliff overlooking the Mediterranean Sea. The distinctive blue-and-white buildings create a magical atmosphere. Wander through narrow lanes lined with art galleries, visit traditional cafés serving mint tea with sea views, and capture breathtaking sunset photos.",
       rating: 4.9,
       reviews: 512,
       bestFor: ["Photography", "Relaxation", "Dining"],
@@ -113,15 +109,13 @@ function Destinations() {
     },
     {
       id: 3,
-      name: "Djerba Island - Beach Paradise",
+      nameKey: "dest3_name",
+      descKey: "dest3_desc",
+      longDescKey: "dest3_longDesc",
       category: "coastal",
       lat: 33.85,
       lng: 10.94,
       image: "/images/woman-sitting-rocks-top-by-ocean.jpg",
-      description:
-        "Tunisia's premier island with pristine beaches, palm groves, and authentic Berber villages.",
-      longDescription:
-        "Djerba is connected to mainland by causeway and offers miles of sandy beaches. Explore traditional villages like Houmt Souk, visit the ancient Synagogue of El Ghriba, enjoy water sports, relax in beach resorts, and experience laid-back island life. Perfect for both adventure and relaxation.",
       rating: 4.8,
       reviews: 378,
       bestFor: ["Beach", "Relaxation", "Water Sports"],
@@ -170,15 +164,13 @@ function Destinations() {
     },
     {
       id: 4,
-      name: "Hammamet - Seaside Resort",
+      nameKey: "dest4_name",
+      descKey: "dest4_desc",
+      longDescKey: "dest4_longDesc",
       category: "coastal",
       lat: 36.4,
       lng: 10.6,
       image: "/images/blue-chair-tropical-relax-resort.jpg",
-      description:
-        "Popular Mediterranean beach resort with golden sands, water sports, and charming medina.",
-      longDescription:
-        "Hammamet combines beautiful beaches with cultural attractions. The golden sandy beaches are perfect for swimming and water sports. Explore the historic medina surrounded by fortified walls, visit the impressive kasbah, and enjoy fresh seafood restaurants along the coast.",
       rating: 4.6,
       reviews: 441,
       bestFor: ["Beach", "Family", "Water Sports"],
@@ -223,15 +215,13 @@ function Destinations() {
     },
     {
       id: 5,
-      name: "Kairouan - Holy City",
+      nameKey: "dest5_name",
+      descKey: "dest5_desc",
+      longDescKey: "dest5_longDesc",
       category: "cultural",
       lat: 35.68,
       lng: 9.92,
       image: "/images/pexels-mahmoud-yahyaoui-29679540.jpg",
-      description:
-        "One of Islam's most sacred cities with the iconic Great Mosque and spiritual heritage.",
-      longDescription:
-        "Kairouan is the fourth holiest city in Islam with profound spiritual significance. The Great Mosque of Sidi Uqba features stunning Islamic architecture with decorated columns and mosaics. Explore the medina's narrow lanes, visit traditional carpet-making workshops, and experience the city's deep religious importance.",
       rating: 4.5,
       reviews: 198,
       bestFor: ["spirituality", "History", "Architecture"],
@@ -280,15 +270,13 @@ function Destinations() {
     },
     {
       id: 6,
-      name: "Tozeur - Desert Gateway",
+      nameKey: "dest6_name",
+      descKey: "dest6_desc",
+      longDescKey: "dest6_longDesc",
       category: "desert",
       lat: 33.92,
       lng: 8.13,
       image: "/images/camel.jpg",
-      description:
-        "Oasis town and gateway to the Sahara with stunning orange dunes and traditional architecture.",
-      longDescription:
-        "Tozeur is perched on the edge of the Great Sand Sea, offering access to the most spectacular desert landscapes. The old medina features unique yellow brick architecture. Explore vast dunes, visit traditional oasis villages, and experience authentic desert hospitality with Bedouin communities.",
       rating: 4.7,
       reviews: 267,
       bestFor: ["Desert", "Adventure", "Photography"],
@@ -337,15 +325,13 @@ function Destinations() {
     },
     {
       id: 7,
-      name: "Zaghouan - Mountain Paradise",
+      nameKey: "dest7_name",
+      descKey: "dest7_desc",
+      longDescKey: "dest7_longDesc",
       category: "nature",
       lat: 36.5,
       lng: 10.15,
       image: "/images/Tunisia-Zaghouan-Rock-Climbing-1024x681.jpg.webp",
-      description:
-        "Mountain town offering rock climbing, spring temples, and stunning elevated views of the plains.",
-      longDescription:
-        "Zaghouan is a charming mountain town at the foot of the Zaghouan Peak. Visit the Temple of the Water spring with its classical architecture, hike to stunning viewpoints, and explore traditional Berber villages. The cool mountain climate provides a refreshing escape from the heat.",
       rating: 4.6,
       reviews: 145,
       bestFor: ["Hiking", "Photography", "Nature"],
@@ -389,15 +375,13 @@ function Destinations() {
     },
     {
       id: 8,
-      name: "Maktar - Roman Ruins",
+      nameKey: "dest8_name",
+      descKey: "dest8_desc",
+      longDescKey: "dest8_longDesc",
       category: "historical",
       lat: 35.75,
       lng: 9.53,
       image: "/images/Tunisia-Maktar-Ruins-1024x762.jpg.webp",
-      description:
-        "Ancient Roman city ruins showcasing impressive architecture and archaeological significance.",
-      longDescription:
-        "Maktar is one of Tunisia's most important Roman archaeological sites. Walk among well-preserved ruins including temples, arches, and villas. The site offers a glimpse into Roman provincial life with excellent examples of Roman engineering and architecture.",
       rating: 4.4,
       reviews: 98,
       bestFor: ["History", "Archaeology", "Culture"],
@@ -436,15 +420,13 @@ function Destinations() {
     },
     {
       id: 9,
-      name: "Kesra - Mountain Views",
+      nameKey: "dest9_name",
+      descKey: "dest9_desc",
+      longDescKey: "dest9_longDesc",
       category: "nature",
       lat: 35.98,
       lng: 9.26,
       image: "/images/Tunisia-Kesra-Views-1024x636.jpg.webp",
-      description:
-        "Scenic mountain village offering panoramic views across Tunisia's interior and traditional Berber culture.",
-      longDescription:
-        "Kesra is a picturesque mountain settlement with breathtaking views across the Tunisian landscape. The village maintains traditional architecture and way of life. Visit local workshops, interact with Berber artisans, and enjoy authentic regional cuisine.",
       rating: 4.5,
       reviews: 67,
       bestFor: ["Scenery", "Culture", "Hiking"],
@@ -483,15 +465,13 @@ function Destinations() {
     },
     {
       id: 10,
-      name: "Sahara Desert - Sand & Stars",
+      nameKey: "dest10_name",
+      descKey: "dest10_desc",
+      longDescKey: "dest10_longDesc",
       category: "desert",
       lat: 33.0,
       lng: 7.8,
       image: "/images/camels sahara-1_2.jpg",
-      description:
-        "Experience the legendary Sahara with infinite dunes, desert camps, and magical starlit nights.",
-      longDescription:
-        "The Sahara offers an unforgettable desert experience with vast golden dunes stretching to the horizon. Experience traditional Bedouin camps, camel trekking, sandboarding, and the most stunning starry sky you'll ever see. An adventure that touches your soul.",
       rating: 4.8,
       reviews: 534,
       bestFor: ["Adventure", "Photography", "Experience"],
@@ -594,49 +574,459 @@ function Destinations() {
           <article
             key={dest.id}
             className="destination-card"
-            onClick={() => setSelectedDestination(dest)}
+            style={{
+              background: "white",
+              borderRadius: "12px",
+              overflow: "hidden",
+              boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+              transition: "transform 0.3s, box-shadow 0.3s",
+              cursor: "pointer",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-8px)";
+              e.currentTarget.style.boxShadow = "0 12px 24px rgba(0,0,0,0.15)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
+            }}
           >
-            <div className="card-image">
-              <img src={dest.image} alt={dest.name} />
-              <div className="card-badge">{dest.category}</div>
+            <div
+              style={{
+                position: "relative",
+                overflow: "hidden",
+                height: "200px",
+              }}
+            >
+              <img
+                src={dest.image}
+                alt={t(`destinations.${dest.nameKey}`)}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  transition: "transform 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.transform = "scale(1.05)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.transform = "scale(1)";
+                }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "10px",
+                  right: "10px",
+                  background: "#ff6b35",
+                  color: "white",
+                  padding: "0.25rem 0.75rem",
+                  borderRadius: "20px",
+                  fontSize: "0.8rem",
+                  fontWeight: "bold",
+                  textTransform: "capitalize",
+                }}
+              >
+                {dest.category}
+              </div>
             </div>
-            <div className="card-content">
-              <h3>{dest.name}</h3>
-              <p className="card-description">{dest.description}</p>
+            <div style={{ padding: "1.5rem" }}>
+              <h3 style={{ margin: "0 0 0.5rem 0", color: "#333" }}>
+                {t(`destinations.${dest.nameKey}`)}
+              </h3>
+              <p
+                style={{
+                  color: "#666",
+                  fontSize: "0.95rem",
+                  marginBottom: "1rem",
+                  height: "3em",
+                  overflow: "hidden",
+                }}
+              >
+                {t(`destinations.${dest.descKey}`)}
+              </p>
 
-              <div className="card-meta">
-                <div className="meta-item">
-                  <span className="icon">⏱</span>
-                  <span>{dest.duration}</span>
-                </div>
-                <div className="meta-item">
-                  <span className="icon">🌡</span>
-                  <span>{dest.climate}</span>
-                </div>
-                <div className="meta-item">
-                  <span className="icon">✓</span>
-                  <span>{dest.accessibility}</span>
-                </div>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "1rem",
+                  marginBottom: "1rem",
+                  fontSize: "0.9rem",
+                  color: "#666",
+                }}
+              >
+                <span>⏱️ {dest.duration}</span>
+                <span>🌡️ {dest.climate}</span>
+                <span>{dest.accessibility}</span>
               </div>
 
-              <div className="card-highlights">
-                {dest.highlights.slice(0, 3).map((h, i) => (
-                  <span key={i} className="highlight-tag">
+              <div
+                style={{
+                  display: "flex",
+                  gap: "0.5rem",
+                  marginBottom: "1rem",
+                  flexWrap: "wrap",
+                }}
+              >
+                {dest.highlights.slice(0, 2).map((h, i) => (
+                  <span
+                    key={i}
+                    style={{
+                      background: "#e6f0ff",
+                      color: "#0066cc",
+                      padding: "0.25rem 0.75rem",
+                      borderRadius: "12px",
+                      fontSize: "0.8rem",
+                      fontWeight: "500",
+                    }}
+                  >
                     {h}
                   </span>
                 ))}
               </div>
 
-              <button className="btn btn-primary btn-sm">Learn More</button>
+              <button
+                onClick={() => setSelectedDestination(dest)}
+                style={{
+                  width: "100%",
+                  padding: "0.75rem",
+                  background:
+                    "linear-gradient(135deg, #0066cc 0%, #ff6b35 100%)",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "6px",
+                  cursor: "pointer",
+                  fontWeight: "bold",
+                  transition: "all 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.transform = "scale(1.05)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.transform = "scale(1)";
+                }}
+              >
+                Learn More
+              </button>
             </div>
           </article>
         ))}
       </div>
 
-      <div className="map-section">
-        <h2>Explore on Map</h2>
-        <Map destinations={destinations} />
+      {/* MAP SECTION EXPLORE ON MAP */}
+      <div
+        style={{ padding: "3rem 2rem", maxWidth: "1400px", margin: "0 auto" }}
+      >
+        <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
+          Explore on Map
+        </h2>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            height: "500px",
+            borderRadius: "12px",
+            overflow: "hidden",
+            boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+          }}
+        >
+          <Map destinations={destinations} />
+        </div>
       </div>
+
+      {/* MODAL FOR DESTINATION DETAILS */}
+      {selectedDestination && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background: "rgba(0,0,0,0.7)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000,
+            padding: "2rem",
+          }}
+          onClick={() => setSelectedDestination(null)}
+        >
+          <div
+            style={{
+              background: "white",
+              borderRadius: "16px",
+              maxWidth: "800px",
+              width: "100%",
+              maxHeight: "90vh",
+              overflow: "auto",
+              animation: "slideUp 0.3s ease-out",
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header with Image */}
+            <div
+              style={{
+                position: "relative",
+                height: "300px",
+                overflow: "hidden",
+              }}
+            >
+              <img
+                src={selectedDestination.image}
+                alt={t(`destinations.${selectedDestination.nameKey}`)}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+              <button
+                onClick={() => setSelectedDestination(null)}
+                style={{
+                  position: "absolute",
+                  top: "20px",
+                  right: "20px",
+                  background: "#fff",
+                  border: "none",
+                  width: "40px",
+                  height: "40px",
+                  borderRadius: "50%",
+                  fontSize: "1.5rem",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+                }}
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div style={{ padding: "2rem" }}>
+              <h2 style={{ marginBottom: "0.5rem", color: "#0066cc" }}>
+                {t(`destinations.${selectedDestination.nameKey}`)}
+              </h2>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "1rem",
+                  marginBottom: "1.5rem",
+                  flexWrap: "wrap",
+                }}
+              >
+                <span
+                  style={{
+                    background: "#ff6b35",
+                    color: "white",
+                    padding: "0.5rem 1rem",
+                    borderRadius: "6px",
+                    textTransform: "capitalize",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {selectedDestination.category}
+                </span>
+                <span
+                  style={{
+                    background: "#10b981",
+                    color: "white",
+                    padding: "0.5rem 1rem",
+                    borderRadius: "6px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  ⭐ {selectedDestination.rating} ({selectedDestination.reviews}{" "}
+                  reviews)
+                </span>
+              </div>
+
+              <p
+                style={{
+                  fontSize: "1.1rem",
+                  color: "#333",
+                  marginBottom: "1.5rem",
+                  lineHeight: "1.8",
+                }}
+              >
+                {t(`destinations.${selectedDestination.longDescKey}`)}
+              </p>
+
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(2, 1fr)",
+                  gap: "1rem",
+                  marginBottom: "1.5rem",
+                }}
+              >
+                <div
+                  style={{
+                    background: "#f0f4ff",
+                    padding: "1rem",
+                    borderRadius: "8px",
+                  }}
+                >
+                  <h4 style={{ margin: "0 0 0.5rem 0", color: "#0066cc" }}>
+                    Duration
+                  </h4>
+                  <p style={{ margin: 0, color: "#333", fontWeight: "bold" }}>
+                    {selectedDestination.duration}
+                  </p>
+                </div>
+                <div
+                  style={{
+                    background: "#fff5e6",
+                    padding: "1rem",
+                    borderRadius: "8px",
+                  }}
+                >
+                  <h4 style={{ margin: "0 0 0.5rem 0", color: "#ff6b35" }}>
+                    Climate
+                  </h4>
+                  <p style={{ margin: 0, color: "#333", fontWeight: "bold" }}>
+                    {selectedDestination.climate}
+                  </p>
+                </div>
+                <div
+                  style={{
+                    background: "#e6fdf7",
+                    padding: "1rem",
+                    borderRadius: "8px",
+                  }}
+                >
+                  <h4 style={{ margin: "0 0 0.5rem 0", color: "#00d4aa" }}>
+                    Best Time
+                  </h4>
+                  <p style={{ margin: 0, color: "#333", fontWeight: "bold" }}>
+                    {selectedDestination.bestTime}
+                  </p>
+                </div>
+                <div
+                  style={{
+                    background: "#ffe6d5",
+                    padding: "1rem",
+                    borderRadius: "8px",
+                  }}
+                >
+                  <h4 style={{ margin: "0 0 0.5rem 0", color: "#f59e0b" }}>
+                    Accessibility
+                  </h4>
+                  <p style={{ margin: 0, color: "#333", fontWeight: "bold" }}>
+                    {selectedDestination.accessibility}
+                  </p>
+                </div>
+              </div>
+
+              <h4 style={{ color: "#0066cc", marginBottom: "0.75rem" }}>
+                Highlights
+              </h4>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "0.5rem",
+                  flexWrap: "wrap",
+                  marginBottom: "1.5rem",
+                }}
+              >
+                {selectedDestination.highlights.map((h, i) => (
+                  <span
+                    key={i}
+                    style={{
+                      background: "#e6f0ff",
+                      color: "#0066cc",
+                      padding: "0.5rem 1rem",
+                      borderRadius: "12px",
+                      fontWeight: "500",
+                    }}
+                  >
+                    {h}
+                  </span>
+                ))}
+              </div>
+
+              <h4 style={{ color: "#0066cc", marginBottom: "0.75rem" }}>
+                Top Attractions
+              </h4>
+              <ul
+                style={{
+                  margin: "0 0 1.5rem 0",
+                  paddingLeft: "1.5rem",
+                  color: "#666",
+                }}
+              >
+                {selectedDestination.attractions.map((a, i) => (
+                  <li key={i} style={{ marginBottom: "0.5rem" }}>
+                    {a}
+                  </li>
+                ))}
+              </ul>
+
+              <h4 style={{ color: "#0066cc", marginBottom: "0.75rem" }}>
+                Recommended Hotels
+              </h4>
+              <div
+                style={{
+                  display: "grid",
+                  gap: "0.75rem",
+                  marginBottom: "1.5rem",
+                }}
+              >
+                {selectedDestination.hotels.slice(0, 3).map((h, i) => (
+                  <div
+                    key={i}
+                    style={{
+                      background: "#f8f9fa",
+                      padding: "0.75rem 1rem",
+                      borderRadius: "6px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div>
+                      <strong>{h.name}</strong>
+                      <div style={{ fontSize: "0.9rem", color: "#ff6b35" }}>
+                        {"⭐".repeat(h.stars)}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <button
+                onClick={() => setSelectedDestination(null)}
+                style={{
+                  width: "100%",
+                  padding: "1rem",
+                  background:
+                    "linear-gradient(135deg, #0066cc 0%, #ff6b35 100%)",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "8px",
+                  fontWeight: "bold",
+                  cursor: "pointer",
+                  fontSize: "1rem",
+                }}
+              >
+                Close Details
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <style>{`
+        @keyframes slideUp {
+          from {
+            transform: translateY(20px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      `}</style>
     </div>
   );
 }

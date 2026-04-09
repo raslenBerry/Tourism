@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
 
-const heroImage = "/images/pexels-mahmoud-yahyaoui-29679540.jpg";
+const heroImage = "/images/old-castle.jpg";
 
 function Home() {
   const navigate = useNavigate();
@@ -43,11 +43,11 @@ function Home() {
     },
   ];
 
-  // Auto-advance carousel every 5 seconds
+  // Auto-advance carousel every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % carouselSlides.length);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [carouselSlides.length]);
 
@@ -186,7 +186,7 @@ function Home() {
           backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          minHeight: "500px",
+          minHeight: "570px",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -250,45 +250,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      {/* ===== IMAGE CAROUSEL ===== */}
-      <section
-        style={{
-          padding: "2rem",
-          maxWidth: "1400px",
-          margin: "0 auto",
-          width: "100%",
-        }}
-      >
-        <div className="image-carousel">
-          <div className="carousel-container">
-            {carouselSlides.map((slide, index) => (
-              <div
-                key={index}
-                className={`carousel-slide ${index === currentSlide ? "active" : ""}`}
-              >
-                <img src={slide.image} alt={slide.title} />
-                <div className="carousel-overlay">
-                  <h3>{slide.title}</h3>
-                  <p>{slide.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Carousel Dots */}
-          <div className="carousel-dots">
-            {carouselSlides.map((_, index) => (
-              <button
-                key={index}
-                className={index === currentSlide ? "active" : ""}
-                onClick={() => goToSlide(index)}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ===== QUICK STATS ===== */}
       <section
@@ -400,73 +361,64 @@ function Home() {
         </div>
       </section>
 
-      {/* ===== FEATURED DESTINATIONS ===== */}
-      <section style={{ padding: "3rem 2rem", background: "#f8f9fa" }}>
-        <div
-          className="section-header"
-          style={{ textAlign: "center", marginBottom: "3rem" }}
-        >
+      {/* ===== FEATURED DESTINATIONS - LARGE ROTATING CAROUSEL ===== */}
+      <section
+        style={{ padding: "4rem 2rem", maxWidth: "1400px", margin: "0 auto" }}
+      >
+        <div style={{ textAlign: "center", marginBottom: "3rem" }}>
           <h2 style={{ fontSize: "2.2rem", marginBottom: "0.5rem" }}>
             {t("destinations.title")}
           </h2>
           <p style={{ fontSize: "1.1rem", color: "#666" }}>
-            Start your journey with our most popular locations
+            Discover featured destinations across Tunisia
           </p>
         </div>
+
         <div
           style={{
-            maxWidth: "1400px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "2rem",
+            position: "relative",
+            width: "100%",
+            height: "500px",
+            borderRadius: "16px",
+            overflow: "hidden",
+            boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
+            cursor: "pointer",
           }}
+          onClick={() => navigate("/destinations")}
         >
           {featuredDestinations.map((dest, idx) => (
             <div
               key={idx}
               style={{
-                background: "white",
-                borderRadius: "12px",
-                overflow: "hidden",
-                boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
-                transition: "transform 0.3s, box-shadow 0.3s",
-                cursor: "pointer",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-8px)";
-                e.currentTarget.style.boxShadow =
-                  "0 12px 24px rgba(0,0,0,0.15)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
+                position: "absolute",
+                width: "100%",
+                height: "100%",
+                opacity: idx === currentSlide ? 1 : 0,
+                transition: "opacity 0.8s ease-in-out",
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${dest.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                display: "flex",
+                alignItems: "flex-end",
               }}
             >
-              <img
-                src={dest.image}
-                alt={dest.name}
+              <div
                 style={{
                   width: "100%",
-                  height: "200px",
-                  objectFit: "cover",
+                  padding: "2rem",
+                  background:
+                    "linear-gradient(to top, rgba(0,0,0,0.8), transparent)",
+                  color: "white",
                 }}
-              />
-              <div style={{ padding: "1.5rem" }}>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  <h3 style={{ margin: 0, color: "#333" }}>{dest.name}</h3>
-                </div>
+              >
+                <h3 style={{ fontSize: "2.5rem", marginBottom: "0.5rem" }}>
+                  {dest.name}
+                </h3>
                 <p
                   style={{
-                    color: "#666",
-                    fontSize: "0.95rem",
+                    fontSize: "1.1rem",
                     marginBottom: "1rem",
+                    opacity: 0.95,
                   }}
                 >
                   {dest.description}
@@ -474,32 +426,49 @@ function Home() {
                 <div
                   style={{
                     display: "flex",
-                    gap: "1rem",
-                    marginBottom: "1rem",
-                    fontSize: "0.9rem",
-                    color: "#666",
+                    gap: "2rem",
+                    fontSize: "0.95rem",
                   }}
                 >
                   <span>⏱️ {dest.duration}</span>
                   <span>📍 {dest.type}</span>
                 </div>
-                <button
-                  style={{
-                    width: "100%",
-                    padding: "0.75rem",
-                    background: "#0066cc",
-                    color: "white",
-                    border: "none",
-                    borderRadius: "6px",
-                    cursor: "pointer",
-                    fontWeight: "bold",
-                  }}
-                >
-                  {t("experiences.viewDetails")}
-                </button>
               </div>
             </div>
           ))}
+
+          {/* Navigation Dots */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: "20px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              display: "flex",
+              gap: "10px",
+              zIndex: 10,
+            }}
+          >
+            {featuredDestinations.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setCurrentSlide(idx);
+                }}
+                style={{
+                  width: idx === currentSlide ? "32px" : "10px",
+                  height: "10px",
+                  borderRadius: "5px",
+                  background:
+                    idx === currentSlide ? "#0066cc" : "rgba(255,255,255,0.5)",
+                  border: "none",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                }}
+              />
+            ))}
+          </div>
         </div>
       </section>
 

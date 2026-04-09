@@ -46,52 +46,69 @@ function Contact() {
       <div className="contact-section">
         <div className="contact-info">
           <div className="info-card">
-            <h4>📞 Phone</h4>
+            <h4>� Project Coordinator</h4>
             <p>
-              <strong>+216 (71) 240 720</strong>
+              <strong>Nabeul, Tunisia</strong>
+            </p>
+            <p
+              style={{
+                color: "#6b7280",
+                fontSize: "0.9rem",
+                marginBottom: "0.5rem",
+              }}
+            >
+              📞 Phone: +216 58 138 146
             </p>
             <p style={{ color: "#6b7280", fontSize: "0.9rem" }}>
-              Monday - Friday: 8:00 AM - 6:00 PM
-            </p>
-            <p style={{ color: "#6b7280", fontSize: "0.9rem" }}>
-              Saturday: 9:00 AM - 1:00 PM
+              📧 Direct Contact: Available through email
             </p>
           </div>
 
           <div className="info-card">
-            <h4>📧 Email</h4>
+            <h4>📞 Team Hotline</h4>
             <p>
-              <strong>info@visittunisia.com</strong>
+              <strong>+216 58 138 146</strong>
             </p>
             <p style={{ color: "#6b7280", fontSize: "0.9rem" }}>
-              General inquiries: info@visittunisia.com
+              Best time to reach us: 9:00 AM - 6:00 PM
+            </p>
+            <p style={{ color: "#6b7280", fontSize: "0.9rem" }}>
+              All 7 days a week
             </p>
           </div>
 
           <div className="info-card">
-            <h4>📍 Office Location</h4>
-            <p>
-              <strong>Tunis Headquarters</strong>
+            <h4>📧 Email Contacts</h4>
+            <p style={{ marginBottom: "0.5rem" }}>
+              <strong>berriraslen@gmail.com</strong>
+            </p>
+            <p style={{ marginBottom: "0.5rem" }}>
+              <strong>firas0elmahdi@gmail.com</strong>
             </p>
             <p style={{ color: "#6b7280", fontSize: "0.9rem" }}>
-              Avenue Habib Bourguiba
-            </p>
-            <p style={{ color: "#6b7280", fontSize: "0.9rem" }}>
-              Tunis 1000, Tunisia
+              Response within 24 hours
             </p>
           </div>
 
           <div
             className="info-card"
-            style={{ borderLeft: "4px solid #10b981" }}
+            style={{ borderLeft: "4px solid #ff6b35" }}
           >
-            <h4>⚡ Response Time</h4>
-            <p style={{ color: "#6b7280", marginBottom: "0.5rem" }}>
-              We aim to respond to all inquiries within{" "}
-              <strong style={{ color: "#111827" }}>24 hours</strong>
+            <h4>📍 Location</h4>
+            <p style={{ marginBottom: "0.5rem" }}>
+              <strong>Nabeul, Tunisia</strong>
             </p>
             <p style={{ color: "#6b7280", fontSize: "0.9rem" }}>
-              For urgent matters, call our hotline directly.
+              Located in the beautiful coastal region of northeast Tunisia
+            </p>
+            <p
+              style={{
+                color: "#6b7280",
+                fontSize: "0.9rem",
+                marginTop: "0.5rem",
+              }}
+            >
+              Dedicated to promoting Tunisia tourism
             </p>
           </div>
 
